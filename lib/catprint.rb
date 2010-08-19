@@ -58,9 +58,11 @@ class CatPrint
                 :panel_source_file,
                 :panel_number,
                 :page_number,
-                :rotation
+                :rotation,
+                :order
 
-  def initialize
+  def initialize(order=nil)
+    @order                      = order
     @action_print_job_xml       = action_print_job_xml
     @production_center_id       = production_center_id
     @payment_method             = payment_method
